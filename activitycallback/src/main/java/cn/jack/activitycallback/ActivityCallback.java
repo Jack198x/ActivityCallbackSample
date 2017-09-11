@@ -11,14 +11,12 @@ import android.content.Intent;
 public class ActivityCallback {
 
     private static final String TAG = "ActivityCallbackFragment";
-    private Activity activity;
     private Intent intent;
     private int requestCode;
     private Callback callback;
     private ActivityCallbackFragment fragment;
 
     private ActivityCallback(Activity activity) {
-        this.activity = activity;
         fragment = new ActivityCallbackFragment();
         FragmentManager fragmentManager = activity.getFragmentManager();
         fragmentManager
